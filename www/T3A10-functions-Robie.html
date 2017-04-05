@@ -1,0 +1,42 @@
+<h3 align=center>FUNCTIONS BY ROB</h3>
+
+<script>
+
+function myAlert(myWords){
+  document.getElementById("myDiv1").innerHTML = myWords
+}
+</script>
+
+<input id="myText1" size=100 type=text value="rob <font color=red>dawg</font>"<br>
+
+<input type=button value="regular function" onclick="{
+ myAlert(document.getElementById('myText1').value)
+}">
+
+
+<input type=button value="jquery function" onclick="{
+alert('8/9')
+ }">
+
+
+<div id="myDiv1">output</div>
+
+
+
+
+<input type=button value="calling a normal function" onclick="{myClick3()
+}"><br>
+
+
+<input type=button value="calling a inline function" onclick="{
+ (function(){
+   document.getElementById('myDiv1').innerHTML= 'jQuery style function work'
+ })()
+}">
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+
+
+<script>
+
+// set the object
+function myStudent(myAge, myName, myImg){
+   this.myStudentAge = myAge
+   this.myStudentName = myName
+   this.myStudentImage = myImg
+   this.myInfo = myStudentInfo
+}
+
+function myStudentInfo(){
+   document.getElementById('myDiv1').innerHTML += ' My name is ' + 
+       this.myStudentName + ' I am ' + this.myStudentAge +
+       ' years old. Here is my picture <br><img width=70 src =' + this.myStudentImage +
+       '><br><br>'
+}
+
+</script>
+
+
+<input type=button value="Brandon object" onclick="{
+   myBrandon = new myStudent(12, 'Brandon','https://s-media-cache-ak0.pinimg.com/736x/62/84/0b/62840b33e5073d58919a8eed2916cba5.jpg' )
+   myBrandon.myInfo()
+}">
+
+
+
+<input type=button value="Rob Object" onclick="{
+   myRob = new myStudent(21, 'Rob','http://imf.ulximg.com/image/740x493/gallery/1481566711_12bb63a4cd708f03369896dde2166be2.jpg/a34c5e31af9c100969009b11f130c502/1481566711_6d501cfcfd52d937b3e64f45a4628dc4.jpg' )
+   myRob.myInfo()
+}">
+
+<input type=button value="Ev Object" onclick="{
+   myEv = new myStudent(45, 'Ev','http://i2.kym-cdn.com/entries/icons/original/000/010/319/almostpolitically.gif' )
+   myEv.myInfo()
+}">
+
+<input type=button value="Kanye Object" onclick="{
+   myYeezys = new myStudent(6, 'Kanye','http://media.gq.com/photos/56cdcb1c154b2d0e6b125d5c/3:2/w_560/adidas-yeezy-boost-mortgage-reddit-3.jpg' )
+   myYeezys.myInfo()
+}">
+
+<input type=button value="Drake Object" onclick="{
+   myDrake = new myStudent(100, 'Drake','https://ksdbfm.org/wp-content/uploads/2016/06/Swerves-of-2015-drake-hotline-bling.jpg')
+   myDrake.myInfo()
+}">
+
+
+
+<div id="myDiv1"></div>
+
+

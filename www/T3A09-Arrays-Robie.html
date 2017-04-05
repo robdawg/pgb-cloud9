@@ -1,0 +1,85 @@
+<font size=5 face=Courier><h1 align=center><b>ARRAYS BY ROBIE</b></h1>
+
+<br><br><hr size=3 color=grey>
+
+<script>
+    document.myHuman = new Array(7)
+    
+    document.myHuman[0] = 'Bill'
+    document.myHuman[1] = 'Fred'
+    document.myHuman[2] = 'Jack'
+    document.myHuman[3] = 'Gillian'
+    document.myHuman[4] = 'Brent'
+    document.myHuman[5] = 'Maria'
+    document.myHuman[6] = 'Mohammed'
+    
+    </script>
+    
+<input type=button value="Show Array" onclick="{
+document.getElementById('myDiv1').innerHTML = ''
+ for (myLoop=0; myLoop <= 6; myLoop++){
+   document.getElementById('myDiv1').innerHTML += myLoop + document.myHuman[myLoop] + '<br>'
+  }
+}">
+
+<div id="myDiv1">output here</div>
+
+<br><br><hr size=3 color=grey>
+
+<input type=button value="numeric sort" onclick="myFunction()">
+
+<p id="myDiv2"></p>
+
+<script>
+var points = [3, 6, 4, 1, 9, 10, 7, 2, 5, 8];
+document.getElementById("myDiv2").innerHTML = points;    
+
+function myFunction() {
+    points.sort(function(a, b){return a - b});
+    document.getElementById("myDiv2").innerHTML = points;
+
+    
+}
+
+</script>
+
+<br><br><hr size=3 color=grey>
+
+
+<button id="getnum" value="num" onclick="Loadnum()">scramble</button>
+<p id="numhere" ></p>
+
+<script>
+
+function Loadnum(){
+    var num = new Array('1','2','3','4','5','6','7','8','9','10');
+    var newnum = Math.floor(Math.random() * num.length);
+    document.getElementById('numhere').innerHTML = newnum;
+    }
+</script>
+
+
+
+</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

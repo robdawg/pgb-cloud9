@@ -1,0 +1,86 @@
+
+
+<input type="button" value="Google" onclick="{
+   location= 'http://www.google.ca'
+}"><br><br>
+
+
+
+<iframe width="500" height="360" src="https://www.youtube.com/embed/qzMQza8xZCc?ecver=2" frameborder="5" style="groove;border-right-width: 35px ;border-left-width: 35px ; border-color :red;"; allowfullscreen></iframe>
+
+
+
+<br><br><br><br><br><br>
+<b style="background-Color : cyan; color:black;
+  border-style :groove ; border-width : 50px ; border-color : forestgreen; ">very fresh border assasfasfasfasfa
+   </b>
+
+<br><br><br><br><br>
+<br><br><br>
+<b style="background-Color : skyblue; color:black;
+  border-style : dashed double; border-width : 50px ; border-color :red ; ">weird border</b>
+
+<br><br>
+<br><br><br><br>
+
+Enter x: <input type=text id="myX" value="3">
+
+<input type="button" value="My computer code" onclick="{
+   
+  x = document.getElementById('myX').value
+  myTemp = ''
+   
+  if (x == 3){
+    myTemp = 'x is 3'
+  } else if (x < 3) {
+       myTemp = 'x is less than 3'
+    } else if(x > 3){
+         myTemp = 'x is greater than 3'
+       }
+
+document.getElementById('myOut').innerHTML = myTemp
+
+}"><br>
+<div id = "myOut">my output</div>
+
+
+
+Enter y: <input type=text id="myY" value="2"><br>
+Enter z: <input type=text id="myZ" value="5"><br>
+
+<input type=button value="complex if" onclick="{
+
+
+  document.getElementById('myOut').innerHTML=
+  y = document.getElementById('myY').value
+  z = document.getElementById('myZ').value
+  if ((y == 2) && (z == 5)){
+  document.getElementById('myOut').innerHTML = y + ','
+  + z + 'y=2 and z=5 <br>'
+}  
+
+ if ((y>=2) && (z<=5)){
+    document.getELementById('myOut').innerHTML += y +
+       ' , ' + z + ' y>=2 and z<=5 <br>'
+
+  }
+  
+}">
+
+
+<br><br><br><br>
+
+<html>
+<body>
+
+<h1>FACTS ABOUT MARS</h1>
+
+<p id="demo">click for awesome facts that you probably didn't know about mars</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Mars is the second smallest planet in the solar system. Named after the Roman god of war, its thin atmosphere is composed of mainly carbon dioxide."'>Click Me!</button>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,39 @@
+<h1 align=center>Loops by Rob</h1>
+
+<textarea id="myArea01"> 4 </textarea><br><br>
+<INPUT TYPE=BUTTON value="click me" onclick="{
+
+document.getElementById('myDiv01').innerHTML =
+  document.getElementById('myArea01').value
+}"><br><br>
+
+<input type=button value="LOOP" onclick="{
+ myTemp=0
+ for(myLoop=1; myLoop<=5; myLoop++){
+  myTemp += 2
+
+}
+
+ document.getElementById('myDiv01').innerHTML = myTemp
+}"><br><br>
+  
+
+<div id="myDiv01">OUTPUT</div>
+
+<br><br>
+
+not yet working
+
+<input type=button value="your code" onclick="{
+myTemp = 0
+document.getElementById('MyDiv01').innerHTML= ''
+for (myLoop=1; myLoop<=35; myLoop++){
+
+   myTemp += parseInt(document.getElementById('myArea01').value)
+   
+   document.getElementById('myDiv01').innerHTML +=
+      myLoop + ' <-- loop, myTemp --> '+ myTemp + '<br>'
+      
+ }
+      
+}">
